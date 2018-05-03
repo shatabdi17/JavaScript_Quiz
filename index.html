@@ -12,31 +12,58 @@
 </head>
 
 <body>
-    <div id="quizContainer" class="container">
-        <div class="title">JavaScript Quiz</div>
-        <div id="question" class="question"></div>
-        <label class="option">
-            <input type="radio" name="option" value="1" />
-            <span id="opt1"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="2" />
-            <span id="opt2"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="3" />
-            <span id="opt3"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="4" />
-            <span id="opt4"></span>
-        </label>
+    <main>
+        <div class="wrapper">
+            <!-- QUIZ START PAGE -->
+            <section class="quiz-start-page">
+                <h1>JS QUIZ</h1>
+                <p class="intro">For every correct answer, you score 10, and for every wrong answer you score -5.</p>      
+                <button type="submit" class="start">START!</button>
+            </section>
+            <!-- END QUIZ START PAGE -->
+
+            <section id="quizContainer" class="container main-container">
+                <div class="title">JavaScript Quiz</div>
+                <div id="question" class="question"></div>
+                <label class="option">
+                    <input type="radio" name="option" value="1" />
+                    <span id="opt1"></span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="option" value="2" />
+                    <span id="opt2"></span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="option" value="3" />
+                    <span id="opt3"></span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="option" value="4" />
+                    <span id="opt4"></span>
+                </label>
+            
+                <button id="nextButton" class="next-btn">Next Question</button>
+                <button id="prevButton" class="next-btn">Previous Question</button>
+                </div>
+                <div id="result" class="container result" style="display:none;">
+            </section>
+            </div>
+            </main>
+            
+            
+            <!-- <footer class="main-container"> -->
+                <footer class="footer-container">
+                <div class="wrapper">
+                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" data-text="I  took the JS quiz !"
+                        data-url="">
+                        Tweet</a>                
+                    <p>&copy; Shatabdi Bhattacharjee</p>
+                </div>
+            </footer>
+        
+
        
-        <button id="nextButton" class="next-btn">Next Question</button>
-        <button id="prevButton" class="next-btn">Previous Question</button>
-    </div>
-    <div id="result" class="container result" style="display:none;">
-    </div>
+    
 
     <!-- SCRIPT SOURCES -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
