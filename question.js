@@ -6,7 +6,7 @@ let questions = [{
     "option4": "||",
     "answer": "!!"
 }, {
-    "question": "2. Which of the following function of String object combines the text of two strings and returns a new string?",
+    "question": "2. Which of the following methods combines the text of two strings and returns a new string?",
     "option1": "add()",
     "option2": "merge()",
     "option3": "concat()",
@@ -16,7 +16,7 @@ let questions = [{
     "question": "3. Which of the following methods does not return a new array?",
     "option1": "forEach()",
     "option2": "map()",
-    "option3": "filer()",
+    "option3": "filter()",
     "option4": "every()",
     "answer": "forEach()"
 }, {
@@ -27,7 +27,7 @@ let questions = [{
     "option4": "Undefined",
     "answer": "Character"
 }, {
-    "question": "5. What character ends a javascript statement?",
+    "question": "5. What character ends a JavaScript statement?",
     "option1": ":",
     "option2": ".",
     "option3": ";",
@@ -55,14 +55,14 @@ let questions = [{
     "option4": "all of them",
     "answer": "all of them"
 }, {
-    "question": "9. If button is clicked which event handler is invoked?",
+    "question": "9. If the submit button on a form is clicked which event handler is invoked?",
     "option1": "onsubmit",
     "option2": "onclick",
     "option3": "onload",
     "option4": "ispostback",
     "answer": "onsubmit"
 }, {
-    "question": "10. What is the function of array object that adds and or removes elements from an array?",
+    "question": "10. Which method changes the contents of an array by removing existing elements and/or adding new elements?",
     "option1": "sort()",
     "option2": "splice()",
     "option3": "unsplice()",

@@ -20,9 +20,9 @@ $(function () {
 
 // PAGE LOAD 
 
-setTimeout(function () {
-    $('.footer-container').hide();
-}, 1000);
+// setTimeout(function () {
+//     $('.footer-container').hide();
+// }, 1000);
 
 $('.main-container').hide();
 $('.start').on('click', function(){
@@ -59,8 +59,12 @@ previousButton.on('click', function () {
 
 function loadNextQuestion() {
     const selectedOption = $('input[name=option]:checked');
-    if (selectedOption.length === 0) {
-         alert('Please select your answer!');
+     if (selectedOption.length === 0) {
+         swal({
+             title: "Please select an answer!",
+             icon: "warning",
+             button: "OK",
+         });
           return;
      }
     let answer = selectedOption.siblings('span').text();
@@ -70,7 +74,7 @@ function loadNextQuestion() {
     } else {
         score = score - 5;
     }
-    console.log(score)
+    //console.log(score)
 
     if (currentQuestion == totalQuestions - 1) {
            nextButton.text('Finish');
@@ -86,7 +90,7 @@ function loadNextQuestion() {
         } else if (score >= 50 && score < 80) {
             resultContainer.text(`Your score is ${score}! Wow, that\'s impressive!`);
         } else if (score >= 80) {
-            resultContainer.text(`Your score is ${score}! You\'re a JS ninja! Want to take the next level?`);
+            resultContainer.text(`Your score is ${score}! You\'re a JS ninja! Want to take the intermediate level?`);
         }       
          //score description ends
         // resultContainer.text(`Your score is ${score}!`); 
