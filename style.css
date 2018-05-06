@@ -146,6 +146,9 @@ footer {
     .quiz-start-page p {
         font-size: 18px;
     }
+    .option{
+        width: 47%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -156,6 +159,12 @@ footer {
     }
     .quiz-start-page p {
         font-size: 22px;
+    }
+    .container {
+        margin-top: 60px;
+    }
+    .option {
+        width: 45%;
     }
     footer {
         margin-top: 60px;
@@ -172,5 +181,15 @@ footer {
     }
     .quiz-start-page p {
         font-size: 20px;
+    }
+    .conatiner {
+        margin-top:10px;
+    }
+    .next-btn {
+       width: 130px;
+       font-size: 12px;
+    }
+    .button-container {
+        padding-top:30px;
     }
 }
