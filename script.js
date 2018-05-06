@@ -4,7 +4,6 @@ $(function () {
     let currentQuestion = 0;
     let score = 0;
     const totalQuestions = questions.length;
-    //console.log(totalQuestions);
 
 // ALL THE VARIABLES 
     const container = $('#quizContainer');
@@ -19,10 +18,6 @@ $(function () {
     let q;
 
 // PAGE LOAD 
-
-// setTimeout(function () {
-//     $('.footer-container').hide();
-// }, 1000);
 
 $('.main-container').hide();
 $('.start').on('click', function(){
@@ -45,6 +40,7 @@ $('.start').on('click', function(){
  });
 
  loadQuestion(currentQuestion);
+
 // CREATE A FUNCTION TO LOAD THE NEXT QUESTION
 nextButton.on('click', function () {
     currentQuestion = currentQuestion + 1;
@@ -68,13 +64,11 @@ function loadNextQuestion() {
           return;
      }
     let answer = selectedOption.siblings('span').text();
-    //console.log(answer);
     if (q.answer === answer) {
         score = score + 10;
     } else {
         score = score - 5;
     }
-    //console.log(score)
 
     if (currentQuestion == totalQuestions - 1) {
            nextButton.text('Finish');
@@ -93,7 +87,7 @@ function loadNextQuestion() {
             resultContainer.text(`Your score is ${score}! You\'re a JS ninja! Want to take the intermediate level?`);
         }       
          //score description ends
-        // resultContainer.text(`Your score is ${score}!`); 
+        
         return;
        }
 
