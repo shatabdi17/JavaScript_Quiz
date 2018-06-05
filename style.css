@@ -168,6 +168,10 @@ footer {
     .result {
         font-size: 40px;
     }
+    .start {
+        color: white;
+        background: black;
+    }
 }
 
 @media (max-width: 320px) {
